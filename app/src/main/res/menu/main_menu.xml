@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background1"
+
+
+    >
+    <item
+        android:icon="@drawable/ic_menu"
+        android:title="menu"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/delete_completed"
+                android:icon="@android:drawable/checkbox_on_background"
+                android:title="Delete Completed" />
+            <item
+                android:id="@+id/menu_delete_all"
+                android:icon="@android:drawable/ic_menu_delete"
+                android:title="Delete all"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/about_us"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="About Us" />
+            <item
+                android:id="@+id/menu_logout"
+                android:icon="@android:drawable/ic_menu_set_as"
+                android:title="logout"
+                android:visible="true"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>

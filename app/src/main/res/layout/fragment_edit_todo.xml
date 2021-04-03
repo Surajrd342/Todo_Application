@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0sp"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    android:paddingTop="70sp"
+    android:forceHasOverlappingRendering="false"
+    tools:context=".EditTodoFragment">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="New Task"
+        android:textColor="#FF5722"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/edit_Title"
+        android:inputType="textPersonName"
+        android:textColor="#040404"
+        android:textColorHighlight="#FF5722"
+        android:textColorLink="#FF5722" />
+
+    <EditText
+        android:id="@+id/edit_txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/edit_Description"
+        android:inputType="textPersonName"
+        android:textColorLink="#FF5722" />
+
+    <EditText
+        android:id="@+id/edit_txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/edit_date"
+        android:inputType="textPersonName"
+        android:textColorLink="#FF5722" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="5sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/edit_priority"
+        android:textColor="#FF5722" />
+
+    <RadioGroup
+        android:id="@+id/edit_rg_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/edit_rb_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_high"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/edit_high"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FF5722" />
+
+        <RadioButton
+            android:id="@+id/edit_rb_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_medium"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/edit_medium"
+            android:textColor=" #fbfbfb "
+            android:textColorLink="#FF5722" />
+
+        <RadioButton
+            android:id="@+id/edit_rb_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_low"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/edit_low"
+            android:textColor=" #fbfbfb "
+            android:textColorLink="#FF5722" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/edit_chk_iscomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_weight="0"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/edit_is_complete"
+        android:textColor="#FF5722"
+        android:textColorLink="#FF5722" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_save"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/edit_save"
+            android:textColor=" #fbfbfb " />
+
+        <Button
+            android:id="@+id/edit_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_cancel"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/cancel"
+            android:textColor=" #fbfbfb " />
+    </LinearLayout>
+
+</LinearLayout>
